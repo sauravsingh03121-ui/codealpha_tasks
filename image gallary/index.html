@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="hero-content">
+            <h1>Stunning Image Gallery</h1>
+            <p>Explore breathtaking landscapes, wildlife, and urban scenes</p>
+        </div>
+        <div class="filters">
+            <button class="filter-btn active" data-category="all">All</button>
+            <button class="filter-btn" data-category="nature">Nature</button>
+            <button class="filter-btn" data-category="animals">Animals</button>
+            <button class="filter-btn" data-category="city">City</button>
+            <button class="filter-btn" data-category="mountains">Mountains</button>
+        </div>
+    </header>
+    <main>
+        <div class="gallery">
+            <!-- Images will be populated by JS -->
+        </div>
+        <div class="lightbox" id="lightbox">
+            <span class="close">&times;</span>
+            <img class="lightbox-content" id="lightbox-img">
+            <button class="nav-btn prev" id="prev-btn"><</button>
+            <button class="nav-btn next" id="next-btn">></button>
+            <div class="image-filters">
+                <button class="filter-btn-lightbox active" data-filter="none">Normal</button>
+                <button class="filter-btn-lightbox" data-filter="grayscale(100%)">Grayscale</button>
+                <button class="filter-btn-lightbox" data-filter="sepia(100%)">Sepia</button>
+                <button class="filter-btn-lightbox" data-filter="blur(2px)">Blur</button>
+                <button class="filter-btn-lightbox" data-filter="brightness(1.2)">Bright</button>
+                <button class="filter-btn-lightbox" data-filter="contrast(1.5)">Contrast</button>
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
